@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siva portfolio</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16*16">
+    <style>
+    #projabstract{
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow:auto;
+    left: 6;
+    transition: 3s;
+    display: none;
+        }
+    #projabstract::-webkit-scrollbar {
+    width: 0px;
+    }
+        .closebtn{
+            position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 4rem;
+  margin-left: 50px;
+  font-weight: 900;
+  color: #fff;
+  
+        }
+        @media (max-width:1200px){
+            .closebtn{
+                position: relative;
+                left: .1rem;
+            }
+        }
+    </style>
+
+</head>
+<body oncontextmenu="return false;">
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="images/ram.jpeg" alt="">
+        <h3 class="name">KATA siva</h3>
+        <p class="post">Master of computer applications</p>
+        <p class="post" id="yellow"><span>&#8220; </span> searching for java  developer job <span>&#8221;</span></p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <div class="home-user">
+        <img src="images/ram.jpeg" alt="">
+    </div>
+
+
+    <h3>HI THERE !</h3>
+    <h1>I'M <span id="typed">siva Rama Subbaiah Kata</span></h1>
+    <p>I am Good at Programming language : <span>JAVA, CORE PYTHON</span>. <br>front-end technologies : </t> <span> HTML5, CSS3, BOOTSTRAP5, JAVASCRIPT</span>.<br>
+        Database : <span>MYSQL</span>.<br>
+        IDE : <span>Eclipse</span>.<br>I'M searching for the java developer role.</p>
+    <a href="#about" ><button class="btn abo">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>about</span> me </h1>
+
+<div class="row">
+    <div class="info abt">
+        <img src="images/ram.jpeg" alt="">
+    </div>
+<div class="info">
+    <h3> <span> name : </span> siva rama subbaiah kata </h3>
+    <h3> <span> date of birth : </span> 09-07-1995 </h3>
+    <h3> <span> qualification : </span> MCA </h3>
+    <h3> <span> looking for a role : </span> Java developer </h3>
+    <h3> <span> language : </span> Telugu, English. </h3>
+</div>
+
+    <div class="counter">
+
+        <div class="box" id="abBox">
+            <span>0</span>
+            <h3>years of experience</h3>
+        </div>
+
+        <div class="box" id="abBox">
+            <span>2+</span>
+            <h3>JAVA porjects completed</h3>
+            
+        </div>
+
+        <div class="box" id="abBox">
+            <h3>click to view my java projects Abstract.</h3>
+            <span><a href="#home" class="btn" id="book" onclick="openNav()" title="click me view project Abstract."><i class="fas fa-book"></i></a></span>
+        </div>
+
+        <div class="box" id="abBox">
+            <h3>I'M Looking for a fresher job.<br>&#8595;</h3>
+            <span><a href="#description" class="btn" id="book" title="click to view my Carrier objective."><i
+                    class="fas fa-user-circle"></i></a></span>
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- about section ends -->
+<!-- description starts -->
+<section class="about" id="description">
+<div class="row">
+    <div class="counter">
+        <div class="box" id="testi-content">
+            <h3><i class="fas fa-quote-left"></i> To secure a challenging position where I can effectively contribute my skills, and innovative ideas to gain knowledge in
+            the work oriented environment.<i class="fas fa-quote-right"></i></h3>
+            <span><i class="fas fa-hand-point-right"></i> Strong Technical skills in Java OOPS,Collections, J2EE (JDBC,Servlets, JSP).
+                <br><i class="fas fa-hand-point-right"></i>Good Knowledge of Html5,Css3,boostrap5 and Javascript.
+                <br><i class="fas fa-hand-point-right"></i>Good Knowledge on MySQL.
+                <br><i class="fas fa-hand-point-right"></i>Excellent Problem solving, Analytical and communication skills.
+                <br><i class="fas fa-hand-point-right"></i>Ability to learn new technologies faster.
+                <br><i class="fas fa-hand-point-right"></i>Good Team Member.</span><br>
+        </div>
+    </div>
+
+    <div class="info testimonial">
+        <a href="#myskills"><img src="images/siva.jpeg" alt="" title="click to view my skills"></a>
+    </div>
+</div>
+</section>
+<!-- description ends -->
+<section class="about" id="projabstract">
+    <a href="#about" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="row">
+        <div class="counter">
+            <div class="box" id="testi-content" style="width: 80%;">
+                <h3>PROJECT 1.</h3>
+                <h3>Title: Banking System And Online Banking System.</h3>
+                <h3><span>Language:</span><span style="color: #f9ca24;"> JAVA</span><br>
+                <span>Concepts used:</span> <span  style="color: #f9ca24;"> OOPS, JDBC, SERVLETS, JSP.</span><br>
+                <span>Local Server:</span> <span  style="color: #f9ca24;"> Apache TomCat Server.</span><br>
+                <span>DataBase:</span> <span  style="color: #f9ca24;"> MySQL.</span></h3><br>
+                <h3 style="font-size:2.5rem;text-decoration: underline;">Abstract</h3>
+                <h3 style="color:#f9ca24;font-size: 1.5rem;width: 100%;"><i class="fas fa-quote-left" style="color: #fff;"></i>I am intrested to doing projects.<br> I
+                    Designed The Front-End Using HTML, CSS, Bootstrap. Banck-end Java and Database mySQL.<br>The Project Theme is Easy
+                    to use the Banking System.<br>This Project Has Two Logins One is for Banking Employee Login <br><br><span style="color: #fff;font-size: 2rem;">Online banking system</span><br><br>The Employeer Doing
+                    Activities To Create or Open A Customer Account Who Are Consulting the Bank. The account details and one pdf a/c form are auto sended to the customer respected mail. <br>and Update the customer Details view
+                    all customers and Easily Search Any Customer by their a/c num.<br>and Active,Deactive The customer A/C. Once You
+                    Deactive the customer A/C The Customer Can not access the Online banking or any transactions. <br>and employer
+                    Easily Deposite and WithDraw and MiniStatements functons generated and the details directy send to the customer
+                    respected mail.<br><br><span style="color: #fff;font-size: 2rem;">Online banking system</span><br><br> Who Are The Customers They Created Online banking
+                    account through their A/C number and login. The Customers can check the A/C balance. and transfer amount. and also
+                    can check the mini statement. and loan functionalities. <i class="fas fa-quote-right" style="color: #fff;"></i></h3>
+                 </div>
+        </div>
+
+        <div class="info testimonial">
+            <img src="images/siva.jpeg" alt="" >
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="counter">
+            <div class="box" id="testi-content" style="width: 80%;">
+                <h3>PROJECT 2.</h3>
+                <h3>Title: Library Management System.</h3>
+                <h3><span>Language:</span><span style="color: #f9ca24;"> JAVA</span><br>
+                    <span>Concepts used:</span> <span style="color: #f9ca24;"> OOPS, JDBC, SERVLETS, JSP.</span><br>
+                    <span>Local Server:</span> <span style="color: #f9ca24;"> Apache TomCat Server.</span><br>
+                    <span>DataBase:</span> <span style="color: #f9ca24;"> MySQL.</span>
+                </h3><br>
+                <h3 style="font-size:2.5rem;text-decoration: underline;">Abstract</h3>
+                <h3 style="color:#f9ca24;font-size: 1.5rem;"><i class="fas fa-quote-left" style="color: #fff;"></i>I am intrested to doing
+                    projects.<br> I
+                    Designed The Front-End Using HTML, CSS, Bootstrap. Banck-end Java and Database mySQL.<br>The Project
+                    Theme is
+                    Library Management System. The College Having The Library This web application is suitable and simple to
+                    use. The
+                    Library Management system Can Have Single login page with different Logins. The Credentials are
+                    different for
+                    librarian and Students.<br>The librarian Can Login with thier Credentials. <br><br> <span
+                        style="color: #fff;font-size: 2rem;">librarian Dashboard</span> <br><br>The librarian
+                    functionalities is to view
+                    the all available books, view the all students details, and easily search the books, students.<br>And
+                    another
+                    functionality is easily issue the books to students, return the books the complete the data will be
+                    stored in the
+                    table, easily view the issued book details. And librarian can add the Books, Update the book details,
+                    delete the
+                    books.<br><br> <span style="color: #fff;font-size: 2rem;">Student dashboard</span> <br><br>Students
+                    can signup with
+                    the college registered number. Login with the Credentials. The students dashboard Have the three
+                    functionalities
+                    home, my profile to view profile, and view all the books details available in the college library . and
+                    my issued
+                    books they can only view the complete history of issued book details.<i class="fas fa-quote-right"
+                        style="color: #fff;"></i></h3>
+                </h3>
+            </div>
+        </div>
+    
+        <div class="info testimonial">
+            <img src="images/siva.jpeg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="counter">
+            <div class="box" id="testi-content" style="width: 80%;">
+                <h3>PROJECT 3.</h3>
+                <h3>Title: College Attendence Management System.</h3>
+                <h3><span>Language:</span><span style="color: #f9ca24;"> JAVA</span><br>
+                    <span>Concepts used:</span> <span style="color: #f9ca24;"> OOPS, JDBC, SERVLETS, JSP.</span><br>
+                    <span>Local Server:</span> <span style="color: #f9ca24;"> Apache TomCat Server.</span><br>
+                    <span>DataBase:</span> <span style="color: #f9ca24;"> MySQL.</span>
+                </h3><br>
+                <h3 style="font-size:2.5rem;text-decoration: underline;">Abstract</h3>
+                <h3 style="color:#f9ca24;font-size: 1.5rem;"><i class="fas fa-quote-left" style="color: #fff;"></i>I am intrested to doing
+                    projects.<br> I
+                    Designed The Front-End Using HTML, CSS, Bootstrap. Banck-end Java and Database mySQL.<br>The Project
+                    Theme is
+                    College Attendence Management System, The College management can Easily take the students attendence
+                    through this web application.<br>The Lecturers Can Login with thier Credentials. <br><br> <span
+                        style="color: #fff;font-size: 2rem;">Attendence Dashboard</span> <br><br>The Attendence dashboard
+                    having 3 functionalities take the attendence, view status, generate reports easily. <br>Attendence
+                    functionality to take the today attendence you can view the today attendence details, search the student
+                    details.<br>Before going to take the attendence you just click the clikToday button they will update the
+                    all students details by default absent and date updated with today date.<br>Now you can ready to take
+                    the attendence class by class easily. and modify the attendence at any time.<br>Finally completion of
+                    all classess attendence you can submit the today attendence details before going to submit you check
+                    once.<br>Once you submit the attendence you can not submit again the today attendence details.<br>status
+                    functionality you can view the all days from start to end students attendence details easily, You can
+                    search the particular student details, some particular date of students attendence details also.<br>The
+                    finaly functionality is to generat the attendence report you just give from between two dates, this
+                    application auto generate the student no of days attendence presents in between dates easily. and you
+                    can download the report as pdf.<i class="fas fa-quote-right" style="color: #fff;"></i></h3>
+                </h3>
+            </div>
+        </div>
+    
+        <div class="info testimonial">
+            <img src="images/siva.jpeg" alt="">
+        </div>
+    </div>
+
+</section>
+
+<!-- description ends -->
+<!-- my skills section starts -->
+<section class="about" id="myskills">
+<h1 class="heading"> My <span>Skills</span></h1>
+<div class="row">
+    <div class="box">
+        <h2>HTML5 <i class="val">95%</i></h2>
+        <div class="progress-bar">
+            <span class="percentage html">
+            </span>
+        </div>
+    </div>
+    <div class="box">
+        <h2>CSS3<i class="val">70%</i></h2>
+        <div class="progress-bar">
+            <span class="percentage css">
+            </span>
+        </div>
+    </div>
+    <div class="box">
+        <h2>CSS FRAMEWORK BOOTSTRAP5 <i class="val">75%</i></h2>
+        <div class="progress-bar">
+            <span class="percentage bootstrap">
+            </span>
+        </div>
+    </div>
+    <div class="box">
+        <h2>JAVA SCRIPT <i class="val">70%</i></h2>
+        <div class="progress-bar">
+            <span class="percentage js">
+            </span>
+        </div>
+    </div>
+    <div class="box">
+        <h2>JAVA <i class="val">90%</i></h2>
+        <div class="progress-bar">
+            <span class="percentage java">
+            </span>
+        </div>
+    </div>
+    <div class="box">
+        <h2>CORE PYTHON <i class="val">80%</i></h2>
+        <div class="progress-bar">
+            <span class="percentage py">
+            </span>
+        </div>
+    </div>
+    <div class="box">
+        <h2>MYSQL <i class="val">75%</i></h2>
+        <div class="progress-bar">
+            <span class="percentage sql">
+            </span>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- my skills section end -->
+
+<!-- education section starts  -->
+
+<section class="education" id="education">
+
+<!-- certification section starts -->
+<section class="education" id="certification">
+    <h1 class="heading"> my <span>certifications</span> </h1>
+    <div class="box-container">
+    
+        <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <span>2020</span>
+            <h3>JAVA CERTIFICATION</h3>
+            <p>certified <b style="color: yellow;">JAVA DEVELOPER</b> from <b style="color: yellow;">ABC</b> Institute Of
+                Technolgy, Banglore.</p>
+            <button id="mycertificate" style="color: #f9ca24;background: none;cursor: pointer;text-decoration: underline;"
+                onclick="preview(this.id);  return false;" title="double click to view">view my certificate</button>
+        </div>
+        <div class="box" style="width: 48rem;">
+            <i class="fas fa-laptop-code"></i>
+            <span>2018-19</span>
+            <h3>MCA(ACADEMIC PROJECT CERTIFICATION)</h3>
+            <p>Project Name: <b style="color: yellow;">REAL TIME MOTION DETECTION BY USING<br> OPENCV ALGORITHM</b><br>
+                Language: <b style="color: yellow;">PYTHON</b></p>
+            <button id="pycertificate" style="color: #f9ca24;background: none;cursor: pointer;text-decoration: underline;"
+                onclick="preview(this.id);  return false;" title="double click to view">view my certificate</button>
+        </div>
+    
+    </div>
+    <h1 class="heading"> MCA <span>Academic Project</span> </h1>
+    <div class="box-contain">
+        <div class="box box1">
+            <img src="images/python/4.jpg" alt="python (Real Time Motion Detection By Using OpenCV algorithm)" id="myImgpy"
+                onclick="preview(this.id);  return false;" title="Real Time Motion Detection By Using OpenCV algorithm">
+        </div>
+
+    </div>
+
+
+</section>
+<!-- certification section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+<h1 class="heading"> my <span>portfolio</span> </h1>
+
+<div class="box-container">
+    <div class="box">
+        <img src="images/project1.jpg" alt="project1 (Banking System and Online Banking System Project)" id="myImgg" onclick="preview(this.id);  return false;"  title="Banking System and Online Banking System Project">
+           </div>
+
+    <div class="box">
+        <img src="images/project2.jpg" alt="project2 (Library Management System Project)" id="myImg1" onclick="preview(this.id); return false;" title="Library Management System Project">
+    </div>
+
+    <div class="box">
+        <img src="images/project3.jpg" alt="project3 (College Attendence Management System)" id="myImg2" onclick="preview(this.id); return false;" title="College Attendence Management System">
+    </div>
+   
+</div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>contact</span> me </h1>
+
+<div class="row">
+
+    <div class="content">
+
+        <h3 class="title">contact info</h3>
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> kata.sivaramasubbaiah1@gmail.com </h3>
+            <h3> <i class="fas fa-phone"></i> +91-784-231-8171. </h3>
+<!--            <h3> <i class="fas fa-phone"></i> +91-778-029-3046. </h3>-->
+            <h3> <i class="fas fa-map-marker-alt"></i> Proddatur, Kadapa, Andhra Pradesh, India - 516360. </h3>
+        </div>
+
+    </div>
+
+    <form method="post" name="google-sheet" autocomplete="off">
+        <input type="text" placeholder="name" class="box" name="name" title="please enter a name" required oninvalid="this.setCustomValidity('This Field May Not Be Blank Please Enter Name')" oninput="setCustomValidity('')">
+        <input type="email" placeholder="email" class="box" name="email" title="please enter a email id" required oninvalid="this.setCustomValidity('This Field May Not Be Blank Please Enter Email')" oninput="setCustomValidity('')"> 
+        <input type="text" placeholder="project" class="box" name="project" title="please enter a project name" required oninvalid="this.setCustomValidity('This Field May Not Be Blank Please Enter Project Name')" oninput="setCustomValidity('')">
+        <textarea name="message" cols="30" rows="10" class="box message" placeholder="message" title="message may not be blank" required oninvalid="this.setCustomValidity('This Field May Not Be Blank Please Type Message')" oninput="setCustomValidity('')"></textarea>
+        <button type="submit" class="btn" id="btn"> send <i class="fas fa-paper-plane"></i></button>
+        <span id="res" style="margin-left: 10px;font-size: 1.5rem; color: yellow;"></span>
+
+    </form>
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="top" title="click to top">
+</a>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="mySlides modal-content" id="img01" onclick="plusDivs(1)" title="clickme" onerror="myFunction()">
+    <!-- <img class="mySlides modal-content" id="img01" src="../images/project1.jpg" onclick="plusDivs(1)" title="clickme"> -->
+     <div id="caption"></div>
+</div>
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfRlsjdKoV0aFZZqhDII7ok6XQvet0flm1cL_rJsvRqxI0jV_o2mlY9r882JyP5SO1/exec';
+        const form = document.forms['google-sheet'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => document.getElementById("res").innerText = "Thank you for contacting me.",document.forms['google-sheet'].reset())
+                .catch(error => document.getElementById("res").innerText = "\n\nyour request error please check your internet connection.")
+        });
+ </script>
+ <script>
+    function openNav() {
+            document.getElementById("projabstract").style.display = "inline-block";
+
+        }
+
+        function closeNav() {
+            document.getElementById("projabstract").style.display = "none";
+        }
+ </script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<!-- custom image preview js link -->
+<script src="js/preview.js"></script>
+
+<!-- custom move to next image js link -->
+<script src="js/nextimg.js"></script>
+
+</body>
+</html>
